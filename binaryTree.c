@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct node{
     struct node* left;
@@ -66,3 +67,4 @@ node* search(node* start, int target){
     }
     return NULL;
 }
+

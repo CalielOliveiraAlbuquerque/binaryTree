@@ -1,2 +1,2 @@
 a:
-	gcc -o app main.c binaryTree.c initTree.c invertBinaryTree.c
+	gcc -o app main.c binaryTree.c initBinaryTree.c binaryTreeInverter.c sort.c

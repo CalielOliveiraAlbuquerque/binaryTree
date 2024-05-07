@@ -1,5 +1,7 @@
 #include <stdbool.h>
-#include "header.h"
+#include <stdlib.h>
+#include "binaryTree.h"
+#include "sort.h"
 
 static bool validateLeaf(int branchIndex,int indexes[],int size){
     if(branchIndex<0||branchIndex>=size){
@@ -30,6 +32,8 @@ int initTree(int array[], int size, node* first){
         int index;
         int side;
     };
+
+    easySort(array,size);
     struct address fQueue[size],sQueue[size];
     int create=1,demand=0;
     int indexes[size],indexHead=0;
@@ -107,4 +111,3 @@ int initTree(int array[], int size, node* first){
     }
     return count;
 }
-

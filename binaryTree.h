@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef binaryTree
+#define binaryTree
 
 typedef struct node{
     struct node* left;
@@ -7,7 +7,7 @@ typedef struct node{
     int value;
 }node;
 void mknull(node* arr[],int size);
-void invertTree(node* start);
 void display(node* start);
 node* search(node* start, int target);
-int initTree(int array[], int size, node* first);
+
+#endif 
